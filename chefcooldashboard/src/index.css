@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+.btn-gradient {
+    background: linear-gradient(93.5deg, #FFFFFF -44.21%, #EC984B 21.38%, #E6750D 106.46%);
+  }
+  
+.nav-pill {
+    box-shadow:
+      0 10px 30px rgba(16, 24, 40, 0.12),
+      0 2px 6px rgba(16, 24, 40, 0.06);  
+    border: 1px solid rgba(255, 255, 255, 0.6);
+  }
+  
+  .login-pill {
+    background: linear-gradient(170deg, #E6750D 20%, #E25C07 80%);
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    height: 42px;
+    line-height: 1;
+    box-shadow: 0 6px 18px rgba(245, 124, 0, 0.18);
+    transition: transform .12s ease, box-shadow .12s ease;
+  }
+  .login-pill:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 26px rgba(245,124,0,0.2);
+  }
+  
+  /* small adjustment for nav link active bg */
+  .bg-orange-50 {
+    background-color: rgba(255, 243, 224, 0.9);
+  }
+  
+  /* ensure avatar has a crisp white ring */
+  .nav-pill img {
+    display: block;
+  }
+  
+  .shadow-footer-card {
+    box-shadow:
+      0 18px 30px rgba(16, 24, 40, 0.08),
+      0 6px 12px rgba(16, 24, 40, 0.06);
+  }
+  
+  /* tweak text smoothing for crispness */
+  .bg-gradient-to-r {
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  /* small tweak so the card lines up nicely with the logo */
+  @media (min-width: 768px) {
+    .max-w-6xl > .flex > .flex-1 {
+      padding-top: 6px; /* vertical align with logo edge */
+    }
+  }
+  /* page background gradient (like your screenshot) */
+  body {
+    background: linear-gradient(90deg, #fff7ef 0%, #fff3f0 100%);
+  }
